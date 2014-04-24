@@ -4,7 +4,7 @@ plzadd.me
 	- find better images for bars
 anim.php 
 	- figure out how to center everything without using <center>
-	- php - won't work unless 100+ images exist
+	- add jump to last/first frame buttons
 /comicbot/
 	- clean up links on top of page
 behind-the-scenes

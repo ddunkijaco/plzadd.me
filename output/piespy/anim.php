@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
     <?php 
-    $i = -3; 
+    $i = -2; 
     $dir = 'banana/';
     if ($handle = opendir($dir)) {
         while (($file = readdir($handle)) !== false){
@@ -11,7 +11,7 @@
                 $i++;
         }
     }
-?>
+	?>
     <script language="javascript" type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/jquery.jsmovie.1.4.1.min.js" ></script>
     <script language="javascript" type="text/javascript">
@@ -19,7 +19,7 @@
     $('#movie').jsMovie({
 		sequence : "banana/banana-########.png",
 		folder   : "./", 
-		from     : <?php echo $i - 100?>,
+		from     : <?php if ($i-100 < 0) {echo 1;} else {echo $i-100;}?>,
 		to       : <?php echo $i?>,
 		fps      : 5,
 		width    : 832,
@@ -28,9 +28,9 @@
 		playOnLoad : false,
 		loader   : {path:"./loader.png",height:40,width:40,rows:4,columns:4}
       });
-    $('#movie').jsMovie("play",<?php echo $i - 100?>,<?php echo $i?>,false,false);
+    $('#movie').jsMovie("play",<?php if ($i-100 < 0) {echo 1;} else {echo $i-100;}?>,<?php echo $i?>,false,false);
     $('#play').click(function(){
-        $('#movie').jsMovie('play',<?php echo $i - 100?>,<?php echo $i?>,false,false);
+        $('#movie').jsMovie('play',<?php if ($i-100 < 0) {echo 1;} else {echo $i-100;}?>,<?php echo $i?>,false,false);
     });
 
 	$('#stop').click(function(){
@@ -56,10 +56,10 @@
 	</style>
 </head>
     <body>
-        <center><div id='movie'></div>
+    <center><div id='movie'></div>
 	<img id="prevFrame" src="img/prev.png" alt="Previous Frame" />
-        <img id="play" src="img/play.png" alt="Play" />
-        <img id='pause' src="img/pause.png" alt="Pause" />
+    <img id="play" src="img/play.png" alt="Play" />
+    <img id='pause' src="img/pause.png" alt="Pause" />
 	<img id='stop' src="img/stop.png" alt="Stop" />
 	<img id='nextFrame' src="img/next.png" alt="Next Frame" />
 	</center>

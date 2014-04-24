@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
     <?php 
-    $i = -3; 
+    $i = -2; 
     $dir = 'banana/';
     if ($handle = opendir($dir)) {
         while (($file = readdir($handle)) !== false){
