@@ -38,7 +38,7 @@
             </td>
         </tr>
     </table><br>
-    <a href="index.html">All Time</a> | 
-	<a href="index-month.html">Month-to-date</a> | 
-	<a href="index-week.html">Week-to-date</a> |
-	<a href="index-today.html">Today</a><br />
+    <a class="title" href="index.html">All</a> | 
+	<a class="title" href="index-month.html">Monthly</a> | 
+	<a class="title" href="index-week.html">Weekly</a> |
+	<a class="title" href="index-today.html">Today</a><br />

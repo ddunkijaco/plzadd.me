@@ -1,12 +1,8 @@
-plzadd.me
-	- make pisg period times prettier
 /pisg/
 	- find better images for bars
 anim.php 
 	- figure out how to center everything without using <center>
 	- add jump to last/first frame buttons
-/comicbot/
-	- clean up links on top of page
 behind-the-scenes
 	- fix JAnderton's /nick to you messing up most referenced nicks
 	- fix URL in karma section (maybe check if nick exists)
