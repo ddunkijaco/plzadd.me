@@ -272,7 +272,7 @@ sub get_time
     my @day = split(" ", $day);
 
     # Get the Date from the users computer
-    my $timezone = $self->{cfg}->{timeoffset} * 3600;
+    my $timezone = ($self->{cfg}->{timeoffset} + 6)* 3600;
     my ($sec,$min,$hour,$mday,$mon,$year,$wday) = localtime(time+$timezone);
 
     $year += 1900;                    # Y2K Patch
@@ -280,22 +280,22 @@ sub get_time
     $min =~ s/^(.)$/0$1/;             # Fixes the display of mins/secs below
     $sec =~ s/^(.)$/0$1/;             # it displays 03 instead of 3
 
-    if ($hour > '23') {               # Checks to see if it Midnight
-        $hour = 12;                   # Makes it display the hour 12
-        $tday = "AM";                 # Display AM
-    } elsif($hour > '12') {           # Get rid of the Military time and
-        $hour -= 12;                  # put it into normal time
-        $tday = "PM";                 # If past Noon and before Midnight set
-    } else {
-        $tday = "AM";                 # If it's past Midnight and before Noon
-    }                                 # set the time as AM
+    #if ($hour > '23') {               # Checks to see if it Midnight
+    #    $hour = 12;                   # Makes it display the hour 12
+    #    $tday = "AM";                 # Display AM
+    #} elsif($hour > '12') {           # Get rid of the Military time and
+    #    $hour -= 12;                  # put it into normal time
+    #    $tday = "PM";                 # If past Noon and before Midnight set
+    #} else {
+    #    $tday = "AM";                 # If it's past Midnight and before Noon
+    #}                                 # set the time as AM
 
     # Use 24 hours pr. day
-    if ($tday eq "PM" && $hour < '12') {
-        $hour += 12;
-    }
+    #if ($tday eq "PM" && $hour < '12') {
+    #    $hour += 12;
+    #}
 
-    return "$day[$wday] $mday $month[$mon] $year - $hour:$min:$sec";
+    return "$day[$wday] $mday $month[$mon] $year - $hour:$min:$sec GMT";
 }
 
 
