@@ -1,0 +1,44 @@
+<table border="0" cellpadding="1" cellspacing="0" width="830">
+        <tr>
+            <td class="headlinebg">
+                <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="headtext">piespy</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table><br>
+    <a href="/piespy/anim.php"><img height="832px" src=
+    "../piespy/banana/banana-current.png" width="832px"></a><br>
+    <br>
+
+    <table border="0" cellpadding="1" cellspacing="0" width="830">
+        <tr>
+            <td class="headlinebg">
+                <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="headtext">Latest Comic (click for more)</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table><br>
+    <a href="/comicbot/"><img src="../comicbot/cartoon.png"></a><br>
+    <br>
+
+    <table border="0" cellpadding="1" cellspacing="0" width="830">
+        <tr>
+            <td class="headlinebg">
+                <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="headtext">pisg period</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table><br>
+    <a href="index.html">All Time</a> | 
+	<a href="index-month.html">Month-to-date</a> | 
+	<a href="index-week.html">Week-to-date</a> |
+	<a href="index-today.html">Today</a><br />
