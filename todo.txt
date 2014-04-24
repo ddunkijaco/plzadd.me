@@ -6,7 +6,7 @@ anim.php
 	- figure out how to center everything without using <center>
 	- php - won't work unless 100+ images exist
 /comicbot/
-	- filter by comic template using AJAX
+	- clean up links on top of page
 behind-the-scenes
 	- fix JAnderton's /nick to you messing up most referenced nicks
 	- fix URL in karma section (maybe check if nick exists)
