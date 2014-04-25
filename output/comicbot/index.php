@@ -11,6 +11,7 @@ body{text-align:center}
 <script type="text/javascript">
     $(document).ready(function() {
         $("img.lazy").lazyload();
+        $(window).resize();
     });
 	$(document).ready(function() {
 	$('a.comic').click(function() {
