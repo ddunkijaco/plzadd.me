@@ -39,7 +39,7 @@ body{text-align:center}
 	<a class="comic" href="#">Minecraft</a> | 
 	<a class="comic" href="#">Peanuts</a> | 
 	<a class="comic" href="#">Pies</a> |
-    <a class="comic" href="#">Yeah</a> |    
+    <a class="comic" href="#">Plum1</a> |    
 	<a class="comic" href="#">Rifle</a> | 
 	<a class="comic" href="#">Rock</a> | 
 	<a class="comic" href="#">RollingStones</a> | 
